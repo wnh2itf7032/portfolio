@@ -5,4 +5,42 @@ html, body {
 
 body {
     font-family: "Hannari";
+    background: #111;
+    margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -30%;
+  z-index: -1;
+  pointer-events: none;
+
+  background:
+    radial-gradient(circle at 20% 30%, #ff4d8d, transparent 35%),
+    radial-gradient(circle at 80% 20%, #7c5cff, transparent 35%),
+    radial-gradient(circle at 50% 80%, #00d4ff, transparent 40%),
+    radial-gradient(circle at 10% 90%, #ffb86b, transparent 35%);
+
+  filter: blur(90px);
+  opacity: 0.85;
+
+  animation: transitionBg 18s ease-in-out infinite alternate;
+}
+
+@keyframes transitionBg {
+  0% {
+    transform: scale(1) rotate(0deg) translate(-2%, -2%);
+    filter: blur(90px) hue-rotate(0deg);
+  }
+
+  50% {
+    transform: scale(1.15) rotate(8deg) translate(3%, 2%);
+    filter: blur(110px) hue-rotate(35deg);
+  }
+
+  100% {
+    transform: scale(1.05) rotate(-6deg) translate(2%, -3%);
+    filter: blur(95px) hue-rotate(80deg);
+  }
 }
