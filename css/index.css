@@ -12,7 +12,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  inset: -30%;
+  inset: 0;
   z-index: -1;
   pointer-events: none;
 
@@ -24,8 +24,9 @@ body::before {
 
   filter: blur(64px);
   opacity: 0.8;
+  transform: scale(1.15);
 
-  animation: bgMove 24s ease-in-out infinite alternate;
+  animation: transitionBg 24s ease-in-out infinite alternate;
 }
 
 @keyframes transitionBg {
