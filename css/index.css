@@ -22,26 +22,19 @@ body::before {
     radial-gradient(circle at 50% 80%, #00d4ff, transparent 40%),
     radial-gradient(circle at 10% 90%, #222e62, transparent 35%);
 
-  filter: blur(90px);
-  opacity: 0.85;
+  filter: blur(64px);
+  opacity: 0.8;
 
-  animation: transitionBg 18s ease-in-out infinite alternate;
+  animation: bgMove 24s ease-in-out infinite alternate;
 }
 
 @keyframes transitionBg {
-  0% {
-    transform: scale(1) rotate(0deg) translate(-2%, -2%);
-    filter: blur(90px) hue-rotate(0deg);
+  from {
+    transform: scale(1) translate(-1%, -1%);
   }
 
-  50% {
-    transform: scale(1.15) rotate(8deg) translate(3%, 2%);
-    filter: blur(110px) hue-rotate(35deg);
-  }
-
-  100% {
-    transform: scale(1.05) rotate(-6deg) translate(2%, -3%);
-    filter: blur(95px) hue-rotate(80deg);
+  to {
+    transform: scale(1.06) translate(1%, 1%);
   }
 }
 
