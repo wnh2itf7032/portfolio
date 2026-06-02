@@ -5,7 +5,7 @@ html, body {
 
 body {
     font-family: "Hannari";
-    background: #111;
+    background: #f4f4f4;
     margin: 0;
 }
 
@@ -17,10 +17,10 @@ body::before {
   pointer-events: none;
 
   background:
-    radial-gradient(circle at 20% 30%, #ff4d8d, transparent 35%),
+    radial-gradient(circle at 20% 30%, #4dffc1, transparent 35%),
     radial-gradient(circle at 80% 20%, #7c5cff, transparent 35%),
     radial-gradient(circle at 50% 80%, #00d4ff, transparent 40%),
-    radial-gradient(circle at 10% 90%, #ffb86b, transparent 35%);
+    radial-gradient(circle at 10% 90%, #222e62, transparent 35%);
 
   filter: blur(90px);
   opacity: 0.85;
