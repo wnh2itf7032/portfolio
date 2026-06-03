@@ -44,3 +44,7 @@ body::before {
   height: 100%;
   margin: 0;
 }
+
+#main > * {
+  margin: 0;
+}
